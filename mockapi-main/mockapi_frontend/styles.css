@@ -1,0 +1,109 @@
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #000;
+  --form-background-color: #fff;
+  --form-text-color: #000;
+  --table-header-background-color: #f4f4f4;
+  --table-header-text-color: #000;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --form-background-color: #1e1e1e;
+  --form-text-color: #ffffff;
+  --table-header-background-color: #333;
+  --table-header-text-color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background: var(--form-background-color);
+  color: var(--form-text-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#toggleDarkMode {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#toggleDarkMode:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background: var(--form-background-color);
+  color: var(--form-text-color);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.user-list {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--table-header-background-color);
+  color: var(--table-header-text-color);
+}
